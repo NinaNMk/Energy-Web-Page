@@ -1,0 +1,1424 @@
+/*
+img{
+    height: auto;
+    width: 100%; /*λειτουργεί όπως το img-fluid. προσαρμόζεται στο μέγεθος της κάθε οθόνης
+} */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face { 
+    font-family: 'PFFuturaNeu-Thin';
+    src: url('../PFFuturaNeu/PFFuturaNeuThin-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuThin-Regular.otf') format('opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuThin-Regular.woff') format('woff'),
+    url('../PFFuturaNeu/PFFuturaNeuThin-Regular.ttf') format('truetype'),
+    url('../PFFuturaNeu/PFFuturaNeuThin-Regular.svg#PFFuturaNeuThin-Regular') format('svg');
+    font-weight: 100;
+    font-style: normal; 
+  }
+  
+  @font-face { 
+    font-family: 'PFFuturaNeu-Light';
+    src: url('../PFFuturaNeu/PFFuturaNeuLight-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuLight-Regular.otf') format('opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuLight-Regular.woff') format('woff'),
+    url('../PFFuturaNeu/PFFuturaNeuLight-Regular.ttf') format('truetype'),
+    url('../PFFuturaNeu/PFFuturaNeuLight-Regular.svg#PFFuturaNeuLight-Regular') format('svg'); 
+    font-weight: 300; 
+    font-style: normal; 
+  }
+  
+  @font-face { 
+    font-family: 'PFFuturaNeu-Medium';
+    src: url('../PFFuturaNeu/PFFuturaNeuMedium-Regular.eot?#iefix') format('embedded-opentype'), 
+    url('../PFFuturaNeu/PFFuturaNeuMedium-Regular.otf') format('opentype'), 
+    url('../PFFuturaNeu/PFFuturaNeuMedium-Regular.woff') format('woff'), 
+    url('../PFFuturaNeu/PFFuturaNeuMedium-Regular.ttf') format('truetype'), 
+    url('../PFFuturaNeu/PFFuturaNeuMedium-Regular.svg#PFFuturaNeuMedium-Regular') format('svg'); 
+    font-weight: 400; 
+    font-style: normal; 
+  }
+  
+  @font-face { 
+    font-family: 'PFFuturaNeu-SemiBold'; 
+    src: url('../PFFuturaNeu/PFFuturaNeuSemiBold-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuSemiBold-Regular.otf') format('opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuSemiBold-Regular.woff') format('woff'),
+    url('../PFFuturaNeu/PFFuturaNeuSemiBold-Regular.ttf') format('truetype'),
+    url('../PFFuturaNeu/PFFuturaNeuSemiBold-Regular.svg#PFFuturaNeuSemiBold-Regular') format('svg');
+    font-weight: 600;
+    font-style: normal; 
+  }
+  
+  @font-face { 
+    font-family: 'PFFuturaNeu-Bold'; 
+    src: url('../PFFuturaNeu/PFFuturaNeu-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../PFFuturaNeu/PFFuturaNeu-Bold.otf') format('opentype'),
+    url('../PFFuturaNeu/PFFuturaNeu-Bold.woff') format('woff'),
+    url('../PFFuturaNeu/PFFuturaNeu-Bold.ttf') format('truetype'),
+    url('../PFFuturaNeu/PFFuturaNeu-Bold.svg#PFFuturaNeu-Bold') format('svg');
+    font-weight: 700; 
+    font-style: normal; 
+  }
+  
+  @font-face { 
+    font-family: 'PFFuturaNeu-Book';
+    src: url('../PFFuturaNeu/PFFuturaNeuBook-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../PFFuturaNeu/PFFuturaNeuBook-Regular.otf') format('opentype'), 
+    url('../PFFuturaNeu/PFFuturaNeuBook-Regular.woff') format('woff'), 
+    url('../PFFuturaNeu/PFFuturaNeuBook-Regular.ttf') format('truetype'), 
+    url('../PFFuturaNeu/PFFuturaNeuBook-Regular.svg#PFFuturaNeuBook-Regular') format('svg'); 
+    font-weight: 400; 
+    font-style: normal; 
+  }
+  
+  @font-face { 
+    font-family: 'PFFuturaNeu'; 
+    src: url('../PFFuturaNeu/PFFuturaNeu-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../PFFuturaNeu/PFFuturaNeu-Regular.otf') format('opentype'),
+    url('../PFFuturaNeu/PFFuturaNeu-Regular.woff') format('woff'),
+    url('../PFFuturaNeu/PFFuturaNeu-Regular.ttf') format('truetype'),
+    url('../PFFuturaNeu/PFFuturaNeu-Regular.svg#PFFuturaNeu-Regular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+  }
+ 
+.bg {
+    /* The image used */
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat;
+    background-position: top center; 
+  
+    /* Full height */
+    height: auto;
+    width: 100%;
+  }
+
+.btnApoktiseTo{
+    background-color: #474A56;
+    border-radius: 3rem;
+    font-family: "PFFuturaNeu-SemiBold";
+    font-size:1.5rem;
+    padding: 1.5rem;
+    width:25rem;
+
+}
+
+.btnApoktiseToP{
+    color:#ffffff;
+    margin-left: 1rem;
+}
+.btnApoktiseTo:hover{
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 15px 18px rgba(0,0,0,0.15);
+}
+.imgElecLogo{
+    margin-left: 8rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+.btnOroi{
+width:25rem;
+padding: 1.5rem;
+border-radius: 3rem;
+
+
+}
+
+.btnOroi:hover {
+    box-shadow: 0 5px 8px #474A56;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+.btnOroiP{
+    font-size: 18px;
+    font-family:"PFFuturaNeu-Medium" ;
+    color: #ffffff;
+    margin-left: 1rem;
+   
+}
+.elinLogoNav{
+    margin-left:5rem;
+}
+.par{
+    margin-left: 7%;
+}
+.firstParOf{
+margin-top: 13rem;    
+margin-left: 7rem;
+}
+
+h4,h1,h2,.pEkptosi{
+font-family:'PFFuturaNeu-SemiBold';
+}
+.pEkptosiBook{
+    font-family: 'PFFuturaNeu-Book';}
+h4{
+color: #474A56;
+font-size: 25px;
+
+}
+h1{
+color:#474A56;
+font-size:72px
+}
+
+h2{
+color:#929AAB;
+/*font-size:36px*/
+}
+
+.pEkptosi{
+color: #39546d;
+font-size: 24px;
+}
+
+.firstParOf{
+    margin-bottom: 3rem;
+}
+
+/*invisible menu*/
+#hiddenMenu{
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    position: fixed;  
+    z-index: -2;
+}
+
+#hiddenMenu.show {
+    position: fixed;
+    z-index: 2;
+    opacity: 1;
+    }
+
+.whiteBox{
+    background-color: #ffffff;
+    max-width: 41.875rem;
+}
+
+.whiteP{
+    color:#ffffff
+}
+
+.whitePsize{
+    font-family:'PFFuturaNeu-Book';
+    font-size:1.1rem ;
+}
+
+.whitePtitle{
+    font-family:'PFFuturaNeu-SemiBold';
+    font-size:1.1rem ;
+}
+.pOmilos{
+    font-family:'PFFuturaNeu-Book';
+    font-size: 0.875rem;
+    color: #2a2a2a;
+    line-height:1.9rem;
+
+}
+.pOrama{
+    font-family:'PFFuturaNeu-SemiBold';
+    font-size: 1.875rem;
+    color: #2a2a2a;
+    line-height:1.9rem;
+
+}
+
+.pEndinamosi{
+    font-family:'PFFuturaNeu-Book';
+    font-size: 1rem;
+    color: #2a2a2a;
+    line-height:1.9rem;
+
+}
+
+.pPerissotera{
+    font-family:'PFFuturaNeu-Book';
+    font-size: 1rem;
+    line-height:1.9rem;
+
+}
+
+/*end invisible menu*/
+
+
+#searchInput{
+
+border-right: none;
+border-left: none;
+border-top:none;
+margin-top: 10rem;
+border-color: #fff;
+max-width: 50rem;
+background-color: #D3D5FD;
+border-radius: 0%;
+font-size: 60px;
+font-family:'PFFuturaNeu-Light' ;
+}
+
+.searchBox{    
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    background-color: #D3D5FD;
+    height: 29.7rem;
+    opacity: 0;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    z-index: -4;
+    
+}
+  .searchBox.show{
+    max-width: 120rem;
+    opacity: 1;
+    position:fixed;
+    z-index: 4;
+  }
+  .hiddenBoxColor{
+    background-color:#D3D5FD;
+    padding-top: 10rem;
+    top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#searchInput::placeholder{
+    color: #25353b;
+
+}
+#searchInput::-webkit-textfield-decoration-container{
+    margin-left: 5rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+  #btn-search{
+      border: none;
+      margin-top: -3.2rem;
+      margin-right: 1rem;
+  }
+
+  #btn-searchBox{
+      margin-top: -5rem;
+  }
+  #btn-X{
+      margin-top: -15rem;
+      
+  }
+
+/*BLUE BIG BOX*/
+.fam{
+    margin-top:5.4rem;
+}
+
+.blue{
+    background-color: #929AAB;
+    margin-left: -19%;
+}
+
+.blueContent{
+    padding-left:3rem;
+    padding-right: 6.8rem;
+    margin-left: 20%;
+}
+
+.z-index1{
+z-index: 1;
+}
+
+.p-bullets{
+    font-family:'PFFuturaNeu-Book';
+    line-height: 1rem;
+    font-size: 0.875rem;
+    color:#D3D5FD;
+}
+
+.bullets{
+    margin-left: 1rem;
+}
+.p-first-par{
+    font-size:0.9rem;
+    color:#ffffff;
+}
+.WhyOikiako{
+    font-family:'PFFuturaNeu-SemiBold';
+    font-size: 3.75rem;
+    line-height: 4rem;
+    color:#ffffff;
+    }
+
+.blueBox-p{
+    font-family:'PFFuturaNeu-Book';
+    font-size:1.1rem ;
+    line-height:1.5rem ;
+    color:#ffffff;
+}
+.blueBox-p1{
+    font-family:'PFFuturaNeu-Bold';
+    font-size:1.1rem ;
+    color:#ffffff;
+}
+/*END BLUE BIG BOX*/
+
+/*BE CLIENT,WHY ELIN ETC*/
+
+.border-bottom{
+    padding: 1px;
+    background: #D3D5FD;
+    width: 8rem;
+    margin-left: 6rem;
+}
+
+
+.title-text{
+    color: #474A56;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    font-family:'PFFuturaNeu-SemiBold';
+}
+
+.title-text3{
+    position: absolute;
+    color: #474A56;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-family:'PFFuturaNeu-SemiBold';
+
+}
+
+.title-content {
+        color: #727988;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        padding-left: 7rem;
+        margin-left: 3rem;
+        font-family: "PFFuturaNeu-Medium";
+        margin-top: 1rem;
+    }
+
+.title-number {
+    font-size: 3.75rem;
+    color: #D3D5FD;
+    font-family:'PFFuturaNeu-Bold';
+    margin-left: 7rem;
+}
+
+.btnMore{
+    border-radius: 2rem;
+    font-family: "PFFuturaNeu-Medium";
+    font-size: .875rem;
+    width:12.5rem;
+    padding: .7rem;
+    background-color: #929AAB;
+    border: #929AAB;
+}
+.btnMore:hover{
+    background-color: rgb(72, 71, 75);
+}
+
+/*END BE CLIENT,WHY ELIN ETC*/
+
+
+/*LightBlue Box & House Pic */
+
+    .light-blue-box{
+    background-color: #D3D5FD;
+    margin-top: -38%;
+    margin-left: 50%;
+    margin-bottom: 8rem;
+    }
+        
+    .pApoktise{
+        color:#929AAB;
+        font-family: "PFFuturaNeu-Medium";
+        font-size: 25px;
+        padding-top: 2rem;
+    }
+    
+    .pOn{
+    color:#929AAB;
+    font-family: "PFFuturaNeu-SemiBold";
+    font-size: 50px;
+    line-height: 50px;
+    }
+
+    .p-lorem{
+        line-height: 30px;
+        font-size: 18px;
+        color:#929AAB;
+        font-family: "PFFuturaNeu-Book";
+        margin-right: 4rem;
+    }
+    .pApoktisebtn1{
+    font-family: "PFFuturaNeu-SemiBold";
+    color: #fff;
+    width:25rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.125rem;
+}
+
+    /*End LightBlue Box & House */
+
+/*Start FAQs etc */
+
+    /*START XRISIMA ENTIPA ETC*/
+
+.circle{
+    background-color: #000;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+.bntMoreAbout1{
+margin-left:10rem;
+border-radius: 2rem;
+}
+
+/*END XRISIMA ENTIPA ETC*/
+.title-faqs{
+    font-size: 40px;
+    font-family: "PFFuturaNeu-SemiBold";
+    color:#222121;
+    margin-top: -3.4rem;
+    
+}
+
+.p-faqs2{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "PFFuturaNeu-Medium";
+    color:#222121;
+    }
+
+.p-faq3{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "PFFuturaNeu-Book";
+    color:#222121;
+}
+
+.imgSma{
+    margin-left: -3rem;
+}
+
+.bntMoreAbout2{
+            border-radius: 2rem;
+            margin-top:1rem;
+            background-color: #929AAB;
+            border: #929AAB;
+        }
+        .bntMoreAbout2:hover{
+            background-color: black;
+        }
+.bntMoreAbout3{
+            border-radius: 2rem;
+            margin-top:1rem;
+            background-color: #929AAB;
+            border: #929AAB;
+        }
+        .bntMoreAbout3:hover{
+            background-color: black;
+        }
+/*End FAQs etc*/
+
+
+/*Start Light-Blue Row*/
+
+.light-blue-box2{
+    background-color: #929AAB;
+}
+
+.pClient{
+    color: #D3D5FD;
+    font-size:20px;
+    line-height: 24px;
+    font-family: "PFFuturaNeu-SemiBold";
+}
+
+
+.numCall{
+    font-size: 52.3px;
+    font-family: "PFFuturaNeu-Bold";
+    color:#ffffff;
+}
+.numCall2{
+    color: #D3D5FD;
+    font-size: 28.23px;
+    font-family: "PFFuturaNeu-Bold";
+}
+
+.circle-blue{
+    background-color: #474A56;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.img-icon{
+    margin-top:0.4rem;
+    margin-left: 0.45rem;
+}
+
+
+.p-elecProb{
+    color:#fffefe;
+    font-size: 18px;
+    font-family: "PFFuturaNeu-Bold";
+}
+
+.p-call{
+    color:#D3D5FD;
+    font-size: 18px;
+    font-family: "PFFuturaNeu-Medium";
+}
+.p-elecProb1{
+    color:#fffefe;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "PFFuturaNeu-Bold";
+}
+
+.p-call1{
+    color:#D3D5FD;
+    font-size: 16px;
+    line-height:24px;
+    font-family: "PFFuturaNeu-Medium";
+}
+.p-callContainer{
+ margin-left:-1rem;
+}
+.arrow-alt-right{
+    color:#ffffff;
+}
+/*End Light-Blue Row */
+
+/*LAST GREY ROW*/
+.last-row{
+    background-color: #f4f4f4;
+}
+
+.p-pratiria{
+    font-size:36px;
+    font-family: "PFFuturaNeu-SemiBold";
+}
+
+
+.vector{
+    margin-left: -1rem;
+}
+.connect{
+    color:#504b4b;
+    font-size:18px;
+    font-family: "PFFuturaNeu-SemiBold";
+}
+.email-input{
+    max-width: 20rem;
+}
+.emailIcon{
+    margin-top: -1rem;
+}
+
+
+.check-input-p{
+font-size:0.8rem;
+color: #bcbcbc;
+}
+
+.fontAw{
+    color:#1F4287;
+}
+
+.card-body{
+    width: 6rem;
+    height: 6rem;
+    background-color:#f4f4f4;
+}
+
+
+
+.mkOil{
+    font-size:18px;
+    font-family: "PFFuturaNeu-SemiBold";
+    color:#1F4287;
+}
+
+.copy{
+    color: #000;
+    font-size: 0.8rem;
+    font-family: "PFFuturaNeu-Medium";
+}
+
+a:hover{
+    text-decoration: none;
+    color:#504b4b;
+}
+
+
+#exampleInputEmail1{
+background-color: #f4f4f4;
+border-top: none;
+border-left:none;
+border-right:none;
+border-color: #474A56;
+max-width: 350px;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;}
+
+
+
+input[type="checkbox"] + label:before {
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        content: "\00a0";
+        display: inline-block;
+        font: 16px/1em sans-serif;
+        height: 16px;
+        margin: 0 .25em 0 0;
+        padding: 0;
+        vertical-align: top;
+        width: 16px;
+        border-radius: .3rem;
+        cursor: pointer;
+      }
+input[type="checkbox"]:checked + label:before {
+        background: #ffffff;
+        color: rgb(90, 86, 86);
+        content: "\2713";
+        text-align: center;
+      }
+   
+.pLastLorem{
+    font-size:14px;
+    font-family: "PFFuturaNeu-Book";
+}
+
+
+.hrRedLast{
+margin-left: -9%;
+}
+/*END LAST GREY ROW*/
+
+/*MEDIA QUERIES*/
+
+/*for menu*/
+
+
+@media screen and (max-width: 576px){
+
+  .btnOroiP{
+      font-size: .9rem;
+  }
+ 
+input::-webkit-input-placeholder {
+        font-size: 25px;
+        line-height: 3;
+    }
+
+#btn-searchBox{
+    font-size:15px;
+    margin-top:-4rem;
+}
+
+#searchInput{
+    font-size: 25px;
+    margin-left: 1rem;
+}
+#btnXicon{
+    padding-top: 2rem;
+}
+#searchInput::-webkit-textfield-decoration-container{
+    margin-left: 2.4rem;
+}
+
+
+    .pOmilos{
+        font-size: 0.775rem;
+    }
+    .pOrama{
+        font-size: 1.775rem;    
+    }
+    
+    .pEndinamosi{
+        font-size: .9rem;
+    }
+    
+    .pPerissotera{
+        font-size: 1rem;
+    }
+
+.firstParOf{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.par{
+    margin-left: 0%;
+}
+
+.fam{
+    margin-top: 0;
+}
+.btnApoktiseTo , .btnOroi{
+    width: 17rem;
+}
+
+
+.imgElecLogo{
+margin-left: 0;
+}
+
+h4{
+font-size: 20px;
+}
+
+h1{
+font-size: 45px;
+}
+
+.elinLogoNav{
+margin-left: 0rem;
+}
+.iphone{
+        margin-top: -1rem;
+    }
+#btn-search{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    }
+
+.burger{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    border-radius: .3rem;
+    }
+.pLastLorem{
+        font-size:11px;
+    }
+
+.p-bullets{
+        line-height: .8rem;
+        font-size: .6rem;  
+    }
+   
+    .house-btn{
+        font-size: .7rem;
+    }
+    .blue{
+        margin-left:0
+    }
+    
+    .blueContent{
+        padding-left:2rem;
+        padding-right: 2rem;
+        margin-left: 5%;
+    }
+   
+    .WhyOikiako{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        }
+    
+    .blueBox-p{
+        font-size:.9rem ;
+        line-height:1.2rem ;
+    }
+    .blueBox-p1{
+        font-size:.7rem ;
+    }
+
+    .light-blue-box{
+        padding-bottom: 1rem;
+    }
+/*BE CLIENT,WHY ELIN ETC*/
+
+.border-bottom{
+    padding: 1px;
+    background: #35abde;
+    width: 5rem;
+}
+
+.title-text{
+    margin-left: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.title-text3{
+    font-size: 0.9rem;
+    line-height: 1rem;
+    margin-top: 0.1rem;
+    margin-left: -1.2rem;
+}
+
+
+
+.title-content {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+.title-number {
+    font-size: 1.6rem;
+}
+
+
+.btnMore{
+    border-radius: 2rem;
+}
+
+.btnMore{
+    border-radius: 2rem;
+    font-size: .775rem;
+    width:9.5rem;
+    padding: .7rem;
+}
+/*END BE CLIENT,WHY ELIN ETC*/
+
+
+/*LightBlue Box & House Pic */
+    .light-blue-box{
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .light-blue-boxContent{
+        margin-left: 1rem;
+    }
+  
+    .pApoktise{
+        font-size: 15px;
+    }
+    
+    .pOn{
+    font-size: 25px;
+    line-height: 30px;
+    }
+
+    .p-lorem{
+        line-height: 16px;
+        font-size: 13px;
+    }
+    .pApoktisebtn1{
+    font-size: 12px;
+    line-height: 16px;
+    }  
+   
+
+/*End LightBlue Box & House */
+
+/*Start FAQs etc */
+.title-faqs{
+    font-size: 20px;
+    margin-top:0;
+    margin-left: 0;
+}
+.p-lorem2{
+margin-top: .5rem;
+font-size: .7rem;
+margin-left: 0;
+}
+.p-faqs2{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 11px;
+    margin-left: 0;
+}
+.p-faq3{
+    font-size: 11px;
+    margin-left: 0;
+}
+
+
+.bntMoreAbout2{
+        border-radius: 2rem;
+        margin-left:2rem;
+        }
+
+.bntMoreAbout3{
+        border-radius: 2rem;
+        margin-left:2rem;
+        margin-bottom: 1rem;
+        }
+
+.p-btn2{
+    font-size: 0.6rem;
+}
+
+.imgSma{
+    margin-left: -4rem;
+    margin-bottom: -3rem;
+}
+/*End FAQs etc*/
+
+.numCall{
+    font-size: 1.7rem;
+}
+.numCall2{
+    font-size: 1.4rem;
+}
+.btn-show-the-map{
+    font-size: .7rem;
+}
+.p-call{
+    font-size:.7rem;
+}
+.p-elecProb{
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.p-call{
+    font-size: 12px;
+}
+.p-elecProb1{
+    font-size: 13px;
+    line-height: 26px;
+    margin-top: .5rem;
+}
+.p-call1{
+    color:#7ddaff;
+    font-size: 10px;
+    line-height:24px;
+}
+.p-callContainer{
+    margin-left:0rem;
+   }
+
+.p-pratiria{
+    font-size:18px;
+    font-family: "PFFuturaNeu-SemiBold";
+}
+
+.check_box{
+margin: 0;
+}
+
+.connect{
+    font-size: 12px;
+}
+.copy{
+    font-size:0.5rem ;
+}
+.btn-show-the-map{
+padding: .5rem;
+}
+.formEmail{
+    margin-left:1.4rem;   
+}
+
+}
+@media screen and (max-width:630px){
+    .whiteBox{
+        background-color: #ffffff;
+        max-width: 18.875rem;
+    }
+   .pContainerMenu{
+       margin-left: 1.8rem;
+   }
+    .elinPhoto{
+        max-width: 18.875rem;
+    }
+.whitePtitle{
+    font-size: 1rem;
+    }
+    .whitePsize{
+    font-size: 0.9rem;
+    max-width: 15rem;
+    }
+    .whitePtitle{
+        font-size:.9rem ;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 967px) {
+
+    #btn-searchBox{
+        font-size:20px;
+        margin-left: -1.5rem;
+    }
+    #searchInput{
+        font-size: 45px;
+    }
+    #btnXicon{
+        width:95px
+    }
+    
+    #searchInput::-webkit-textfield-decoration-container{
+        margin-left: 2.4rem;
+    }
+    .firstParOf{
+        margin-left:0 ;
+    }
+    input::-webkit-input-placeholder {
+        font-size: 35px;
+        line-height: 3;
+    }
+    .btnApoktiseToP,.btnOroiP{
+        font-size: 1rem;
+    }
+ 
+    .hrRed{
+        margin-left: -12%
+        }
+    #btn-search{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+
+    .burger{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1rem;
+        padding-top: .5rem;
+        border-radius: .3rem;
+    }
+    .blueContent{
+        padding-left:3rem;
+        padding-right: 3rem;
+        margin-left: 5%;
+    }
+    .blue{
+        margin-left: 0%;
+    }
+
+    .WhyOikiako{
+        font-size: 2rem;
+        line-height: 2rem;
+        }
+    
+    .blueBox-p{
+        font-size:1rem ;
+        line-height:1.5rem ;
+    }
+    .blueBox-p1{
+        font-size:.9rem ;
+    }
+
+
+/*BE CLIENT,WHY ELIN ETC*/
+
+.border-bottom{
+    padding: 1px;
+    width: 5rem;
+}
+
+.title-text{
+    margin-left: 0.3rem;
+    font-size: 1.4em;
+    margin-top: -0.5rem;
+}
+
+.title-text3{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin-top: 0.7rem;
+    margin-left:1rem;
+}
+
+
+
+.title-content {
+        color: #727988;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+
+.title-number {
+    font-size: 2rem;
+    color: #35abde;
+}
+
+/*END BE CLIENT,WHY ELIN ETC*/
+
+/*LightBlue Box & House Pic */
+.light-blue-box{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.pApoktise{
+    font-size: 25px;
+}
+
+.pOn{
+font-size: 40px;
+line-height:40px;
+}
+
+.p-lorem{
+    line-height: 30px;
+    font-size: 18px;
+}
+.pApoktisebtn{
+font-size: 15px;
+line-height: 20px;
+}  
+
+/*End LightBlue Box & House */
+
+/*Start FAQs etc */
+.title-faqs{
+    font-size: 30px;
+    margin-top:0;
+    margin-left: 0;
+}
+.p-lorem2{
+margin-top: .5rem;
+font-size: 1.2rem;
+margin-left: 0;
+}
+.p-faqs2{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 18px;
+    margin-left: 0;
+}
+.p-faq3{
+    font-size: 18px;
+    margin-left: 0;
+}
+
+.p-btn2{
+    font-size: 1rem;
+}
+
+.imgSma{
+    margin-left: -4rem;
+    margin-bottom: -3rem;
+}
+.bntMoreAbout3{
+        margin-bottom: 1rem;
+        }
+/*End FAQs etc*/
+.p-elecProb1 ,.p-elecProb{
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    
+}
+.circle-blue{
+    margin-top: 1rem;
+}
+.bntMoreAbout2{
+    margin-bottom: 3rem;
+}
+/*lastLightBlue*/
+.numCall{
+    font-size: 2.5rem;
+}
+.numCall2{
+    font-size: 1.5rem;
+}
+.client{
+    font-size: 1.3rem;
+}
+
+.p-call,.p-call1{
+    font-size:1.2rem;
+}
+
+.check_box{
+margin: 0;
+}
+#exampleInputEmail1 ,#exampleCheck1{
+margin-left: 3rem;
+}
+
+}
+
+@media screen and (min-width: 967px) and (max-width: 1367px) {
+
+    input::-webkit-input-placeholder {
+        font-size: 46px;
+        line-height: 3;
+    }
+   
+    .blueContent{
+        padding-left:3rem;
+        padding-right: 3rem;
+        margin-left: 5%;
+    }
+   .blue{
+       margin-left: -8%;
+   }
+   
+   
+    .hrRed{
+        margin-left: -9%
+        }
+   
+    #btn-search{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+
+    .burger{
+        width: 3rem;
+        height: 3rem;
+        margin-top: 1rem;
+        padding-top: .5rem;
+        border-radius: .3rem;
+    }
+   
+
+/*BE CLIENT,WHY ELIN ETC*/
+
+.title-text{
+    margin-left: 0.3rem;
+    font-size:1.8em;
+    margin-top: -0.5rem;
+
+}
+
+.title-text3{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: -1.7rem;
+    margin-left: -3rem;
+}
+
+.title-content {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+.title-number {
+    font-size: 2rem;
+    margin:1.2rem;
+    padding:0rem;
+}
+
+.border-bottom{
+    margin:0.5rem;
+}
+
+.p-MoreAbout{
+    font-size: 1rem;
+}
+
+/*END BE CLIENT,WHY ELIN ETC*/
+
+/*LightBlue Box & House Pic */
+
+.light-blue-box{
+    padding-bottom: 1.2rem;
+}
+
+.light-blue-boxContent{
+    margin-left: 3rem;
+}
+.p-lorem{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.pApoktise{
+    margin-top: 1rem;
+}
+.house-btn{
+   font-size: 1.5rem;
+}
+
+/*End LightBlue Box & House */
+.p-elecProb{
+    font-size: 15px;
+}
+
+.p-call{
+    font-size: 15px;
+}
+.p-elecProb1{
+    font-size: 16px;
+}
+
+.p-call1{
+    font-size: 14px;
+}
+.bntMoreAbout3{
+    margin-left:2rem;
+    margin-bottom: 2rem;
+}
+.bntMoreAbout2{
+    margin-left:1.5rem;
+    margin-bottom:4rem;
+}
+/*lastLightBlue*/
+.numCall{
+    font-size: 2.3rem;
+}
+.numCall2{
+    font-size: 1.2rem;
+}
+.p-pratiria{
+    font-size: 29px;
+}
+.p-elecProb1 ,.p-elecProb{
+    margin-bottom: 2rem;
+    font-size: 13px;
+    
+}
+.iphone{
+    margin-top: -.7rem;
+}
+.phone{
+    margin-bottom: 3rem;
+}
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1190px){
+    .light-blue-box{
+       margin: 0;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .light-blue-box{
+        padding-bottom: 4.5rem;
+        padding-top:3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mk's</title>   
+    <!--FontAwesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+<section>
+    <div  class="bg">
+    <!--START NAV-->  
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="col" style="position:fixed; z-index:3;">
+                 <div class="container-fluid">
+                    <div class="row mt-5">
+                        <div class="col-md-1 col-5">
+                            <img src="./img/mk'slogo.jpg" class="img-fluid mkLogoNav" alt="Mk Logo">
+                        </div> 
+                        <div class="col-md-10 col-7 d-flex justify-content-end">
+                            <button id="btn-search" type="button" class="search-button menu__link nav-link btn btn-lg btn-link">
+                                <i class="fas fa-search" style="color: #ffff;"></i>
+                            </button> 
+                            <div class="burger">
+                                <a href="#" id="menu">
+                                    <img src="./img/burger.png"  alt="">
+                                </a>
+                            </div>
+                           
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--END NAV-->
+
+   <!--START HIDDEN SEARCH-->
+  
+    <div class="searchBox container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-sm-6 offset-sm-3 col-9">
+                <input id="searchInput" class="form-control" type="search"  placeholder="      Search in Mk.com">
+                <button id="btn-searchBox" type="button" class="search-button menu__link nav-link btn btn-lg btn-link">
+                    <i class="fas fa-search fa-3x" class="" style="color: #ffff;"></i>
+                </button> 
+                <div class="row">
+                    <div class="col-sm-1 offset-sm-11 col-2 offset-10">
+                        <button id="btn-X" type="button" class="search-button menu__link nav-link btn btn-lg btn-link">
+                            <i class="fab fa-5x fa-xing" id="btnXicon"></i>
+                            
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<!--END HIDDEN SEARCH-->
+
+    <!--START HEADER-->  
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col firstParOf">
+                    <div class="par">
+                        <h4 class=" animate__animated animate__fadeInLeft">
+                            ΠΡΟΓΡΑΜΜΑ ΗΛΕΚΤΡΙΚΗΣ ΕΝΕΡΓΕΙΑΣ
+                        </h4>
+                        <h1 class="animate__animated animate__slideInUp">
+                            Up!Οικιακό
+                        </h1>
+                        <h2 class=" animate__animated animate__fadeInRight">
+                            Απολαύστε την ελευθερία σας
+                        </h2>
+                        <p class="pEkptosi ml-md-3 mt-3">
+                            <i class="fas fa-check animate__animated animate__zoomIn" style="color: #929AAB;"></i>  Έκπτωση Συνέπειας 20% <br>
+                            <i class="fas fa-check animate__animated animate__zoomIn" style="color: #929AAB;"></i> Χωρίς δέσμευση συμβολαίου <span class="pEkptosiBook">(αφορά κατηγορία πελατών Γ1)</span> <br>
+                            <i class="fas fa-check animate__animated animate__zoomIn" style="color: #929AAB;"></i> Επιπλέον έκπτωση 3% σε <span class="pEkptosiBook">συνδυασμό</span> «Dual Energy» <br>
+                            <i class="fas fa-check animate__animated animate__zoomIn" style="color: #929AAB;"></i> Χωρίς Χρέωση Εγγύησης <span class="pEkptosiBook">με ενεργοποίηση πάγιας <br> εντολής πληρωμής του λογαριασμού σας.</span><br>
+                            <i class="fas fa-check animate__animated animate__zoomIn" style="color: #929AAB;"></i> Δώρο 200 πόντοι Up Reward <span class="pEkptosiBook">κάθε μήνα!</span> 
+                        </p>
+                      
+                        <div class="mt-5 d-flex flex-column flex-sm-row">
+
+                            <a class="btnApoktiseTo" href="#" target="_blank">
+                                <img class="ml-2 ml-md-5 " src="./img/fotia.png" class="fotiaBtn" alt="">
+                                <span class="btnApoktiseToP">ΑΠΟΚΤΗΣΕ ΤΟ </span>
+                            </a>
+                
+                            <a class="btnOroi  text-center " href="#" target="_blank">
+                                <i class="fas fa-lg fa-file-pdf" style="color: #ffff;" ></i>
+                                <span class="btnOroiP ">ΌΡΟΙ ΠΡΟΓΡΑΜΜΑΤΟΣ</span>
+                            </a>
+                            
+                        </div>
+                      
+                    </div>
+                   
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+
+    <!-- START INVISIBLE MENU-->
+    <div class="container-fluid">
+        <div class="row"  id="hiddenMenu">
+            <div class="hiddenBoxColor">
+                <div class="row">
+                    <div class="col">
+                        <div class="container-fluid">
+                            <div class="row ml-lg-5">
+                                    <div class="col-xl-5  mt-5">
+                                       <img src="./img/mk-photo.jpg" class="img-fluid elinPhoto" alt="mk_photo">
+                                       <div class="whiteBox">
+                                           <div class="contentOfWhiteBox ml-md-5 mr-md-5 mb-5">
+                                            <p class="ml-3 pt-3 pOmilos">
+                                                O Όμιλος
+                                            </p>
+                                                <p class="ml-3 pOrama">Όραμα και αρχές</p>
+                                                <p class="ml-3 pEndinamosi">Να ενδυναμώνουμε συνεχώς την θέση 
+                                                    μας στην Ελληνική ενεργειακή αγορά διεκδικώντας πρωταγωνιστικό ρόλο
+                                                 </p>
+                                                <div class="ml-3 pPerissotera"><a href="" style="color: #474A56;">> περισσότερα</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--προσθηκη οριζοντιας γραμμης--->                              
+                                    <!--<div class="col-xl-1 border-left"></div> -->
+                                    <div class="col-xl-7  mt-sm-5 py-5 pContainerMenu">
+                                        <div class="row  mt-5">
+                                            <div class="col-md-4">
+                                               <p class="whiteP whitePtitle">Ο ΟΜΙΛΟΣ</p>
+                                                <p class="whiteP whitePsize">
+                                                    Όραμα και αρχές
+                                                    Ιστορία
+                                                    Διοίκηση & Οργάνωση
+                                                    Βιώσιμη Ανάπτυξη
+                                                    Συνδεδεμένες Εταιρείες
+                                                    Υλικοτεχνική Υποδομή
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="whiteP whitePtitle">ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</p>
+                                                <p class="whiteP whitePsize">
+                                                    Μk στα Καύσιμα 
+                                                    Μk στη Ναυτιλία
+                                                    Μk στις Κατασκευές
+                                                    Μk στα Βιοκαύσιμα
+                                                    Μk στην Ενέργεια
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p class="whiteP whitePtitle">ΚΟΙΝΩΝΙΚΗ ΥΠΕΥΘΥΝΟΤΗΤΑ</p>
+                                                <p class="whiteP whitePsize">
+                                                    Lorem ipsum <br>
+                                                    Dolor sit amet <br>
+                                                    Consectetur <br>
+                                                    Adipiscing elit
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-sm-5">
+                                            <div class="col-md-4">
+                                            <p class="whiteP whitePtitle animate__animated animate__fadeInDown">ΕΠΕΝΔΥΤΙΚΕΣ ΣΧΕΣΕΙΣ</p>
+                                                <p class="whiteP whitePsize">
+                                                    Group by Numbers
+                                                    Εταιρική Διακυβέρνηση
+                                                    Οικονομική Ενημέρωση
+                                                    Μετοχή
+                                                    Ενημέρωση Μετοχών
+                                                    Επενδυτικά Νέα
+                                                    Επικοινωνία IR
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                            <p class="whiteP whitePtitle">ΑΝΘΡΩΠΙΝΟ ΔΥΝΑΜΙΚΟ</p>
+                                                <p class="whiteP whitePsize">
+                                                    Lorem ipsum <br>
+                                                    Dolor sit amet <br>
+                                                    Consectetur 
+                                                </p>
+                                            </div>
+                                            <div  class="col-md-4">
+                                                 <p class="whiteP whitePtitle">ΚΕΝΤΡΟ ΤΥΠΟΥ</p>
+                                                <p class="whiteP whitePsize">
+                                                    Δελτία Τύπου
+                                                    Διαφημιστικές καμπάνιες
+                                                    Ελληνικά νέα
+                                                </p>
+                                            </div>
+                                            <div class="row ml-sm-4">
+                                                <hr style="width:40rem">
+                                            </div>
+                                        </div>
+                                        <div class="row ml-sm-4">
+                                            <a href="" class="whiteP whitePsize">Επικοινωνία</a>
+                                            <a href="" class="whiteP whitePsize ml-5">Sitemap</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END INVISIBLE MENU-->
+
+    <!--START MAIN-->
+    <main class="container-fluid p-0 pt-5">
+        <div class="row mt-5 no-gutters"><!--αφαιρεί τa  by default margin&padding δεξιά,αριστερά--->
+            <div class="col-xl-4 mt-5 pt-5 z-index1  "> <!--animate__animated animate__fadeInLeft--> 
+                <img src="./img/fam.png" class="fam img-fluid" alt="">
+             </div>
+            <div class="col-xl-8 pt-5"> <!---animate__animated animate__fadeInDown-->
+                <div class="container blue mt-5 pb-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="blueContent">
+                                <p class="WhyOikiako mt-5 pt-5">
+                                    Γιατί να επιλέξω το <br>
+                                    Up! ΟΙΚΙΑΚΟ;
+                                     </p>
+                                <p class="blueBox-p">Είστε συνεπείς στις πληρωμές σας, δεν θέλετε δεσμεύσεις, ενώ παράλληλα θέλετε να έχετε χαμηλή χρέωση όλο το 24ωρο;</p>
+                                <p class="blueBox-p">
+                                                Τότε το On! Οικιακό είναι το πρόγραμμά σας!
+                                                <br>
+                                                Με έκπτωση συνέπειας 20%, χωρίς καμία χρονική δέσμευση, αλλά και με δώρο 200 πόντους 
+                                                UP Reward κάθε μήνα, θα κάνει κάθε μέρα σας πιο φωτεινή. Επιπλέον, επιλέξτε ένα από 
+                                                τα οικονομικά προγράμματα Φυσικού Αερίου και <span style="font-family:PFFuturaNeu-SemiBold;">κερδίστε έξτρα έκπτωση στο ρεύμα σας ίση με 3%</span> 
+                                                και <span style="font-family:PFFuturaNeu-SemiBold">30% δωρεάν φυσικό αέριο χωρίς δεσμεύσεις!</span>
+                                </p> 
+                               <!-- table-χρεωσεις -->  
+                                <div class="container-fluid"> 
+                                    <div class="row">
+                                                <div class="col-4 blueBox-p1">
+                                                    Χρέωση Ενέργειας 
+                                                    <br>
+                                                    <span class="blueBox-p1 ml-xl-5">Ημέρας</span>
+                                                </div>
+                                                <div class="col-4 blueBox-p1">Έκπτωση Συνέπειας</div>
+                                                <div class="col-4  blueBox-p1">
+                                                    Επιπλέον Έκπτωση
+                                                    <br>
+                                                   <span class="blueBox-p1 ml-xl-3">Dual Energy</span> 
+                                                </div>
+                                    </div>
+                                        <div class="row pt-3 pl-lg-4">
+                                            <div class="col-4 blueBox-p1 pl-0">0,0950€/kWh</div>
+                                            <div class="col-4 blueBox-p1 pl-4">0,15</div>
+                                            <div class="col-4 blueBox-p1">3%</div>
+                                        </div>
+                                </div>       
+                                <!-- end-of table-χρεωσεις -->
+                
+                                <!-- bullets -->
+                                            <div class="d-flex align-items-baseline bullets mt-4">
+                                                <img src="./img/bullet.png" alt="bullet" />
+                                                <p class="p-bullets  ml-1">
+                                                    <span>Εφαρμόζεται πάγια χρέωση ίση με 0,42€/μήνα για μονοφασική ή 1,33€/μήνα για τριφασική παροχή</span>
+                                                </p>  
+                                            </div>
+                    
+                                            <div class="d-flex align-items-baseline bullets">
+                                                <img src="./img/bullet.png" alt="bullet" />
+                                                <p class="p-bullets  ml-1">
+                                                    <span>Οι χρεώσεις αφορούν στο ανταγωνιστικό σκέλος του τιμολογίου, εφόσον δεν ενεργοποιηθεί το δικαίωμα του προμηθευτή για εφαρμογή όρων αναπροσαρμογής των χρεώσεων. </span>
+                                                </p>  
+                                            </div>
+                    
+                                            <div class="d-flex align-items-baseline bullets">
+                                                <img src="./img/bullet.png" alt="bullet" />
+                                                <p class="p-bullets  ml-1">
+                                                    <span>Δεν περιλαμβάνεται ΦΠΑ 6%</span>
+                                                </p>  
+                                            </div>
+                    
+                                            <div class="d-flex align-items-baseline bullets">
+                                                <img src="./img/bullet.png" alt="bullet"/>
+                                                <p class="p-bullets ml-1">
+                                                    <span>Το πρόγραμμα On! Οικιακό δεν διατίθεται σε πελάτες ΚΟΤ</span>
+                                                </p>  
+                                            </div> 
+                                <!-- end of bullets -->
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--END MAIN-->
+
+    <!--BE CLIENT,WHY ELIN ETC-->
+    <section class="container-fluid">
+        <div class="row pt-5">
+            <!-- BE CLIENT-->
+            <div class="col-lg-4 pr-xl-5 pl-xl-5 mb-5">
+                        <div>
+                            <span class="title-number pr-3">
+                                1
+                            </span>
+                            <span class="title-text">
+                                Γίνε πελάτης
+                            </span>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="title-content">
+                            <p class="pb-2">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos similique error rerum rem hic maiores! Eius magnam neque doloribus asperiores.
+                            </p>
+                            <a href="#" target="_blank" class="btn btn-primary btnMore"><span>ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</span></a>
+                        </div>
+            </div>
+            <!-- END BE CLIENT-->
+
+            <!-- WHY ELIN -->
+            <div class="col-lg-4 whyElin pr-xl-5 pl-xl-5 mb-5">
+                            <div>
+                                <span class="title-number pr-3">
+                                    2
+                                </span>
+                                <span class="title-text">
+                                            Γιατί Mk's?
+                                </span>
+                            </div>
+                            <div class="border-bottom"></div>
+                            <div class="title-content">
+                                <p class="pb-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste incidunt perspiciatis fugit dolor! Omnis natus quisquam suscipit reiciendis eum?
+                                </p>
+                                <a href="#" target="_blank" class="btn btn-primary btnMore"><span class="p-MoreAbout">ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</span></a>
+                            </div>
+            </div>
+            <!-- END WHY ELIN -->
+    
+            <!-- SHOW YOUR INTEREST -->
+            <div class="col-lg-4  whyElin pr-xl-5 pl-xl-5 mb-5">
+                        <div>
+                            <span class="title-number pr-5">
+                                3
+                            </span>
+                            <span class="title-text3">
+                               Εκδήλωση <br>Ενδιαφέροντος
+                            </span>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="title-content">
+                            <p class="pb-2">
+                                Lorem ipsum dolor 
+                                sit amet consectetur 
+                                adipisicing elit. 
+                                Deleniti necessitatibus 
+                                temporibus architecto eius 
+                                expedita officiis veniam ex, asperiores possimus velit?
+                            </p>
+                            <a href="#" target="_blank" class="btn btn-primary btnMore"><span class="p-MoreAbout">ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</span></a>
+                        </div>
+            </div>
+            <!-- SHOW YOUR INTEREST-->
+        </div>
+    </section>
+    <!--BE CLIENT,WHY ELIN ETC-->
+
+    <!--PHOTO HOUSE&BOX-->
+    <section class="container-fluid mt-2" style="background-color: black;">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-10">
+                <img src="./img/Layer.png" class="img-fluid"alt="">
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-xl-5 light-blue-box">
+                    <div class= "ml-xl-5 pl-xl-5 light-blue-boxContent">
+                        <p class="pApoktise">Απόκτησε το πρόγραμμα</p>
+                        <p class="pOn">Up! Οικιακό<br>Νυχτερινό</p>
+                        <p class="p-lorem">Lorem ipsum dolor, 
+                            sit amet consectetur adipisicing elit.
+                             Odit incidunt, quisquam corporis consectetur 
+                             aliquid voluptatum fugit tenetur odio eius maxime 
+                             suscipit natus! Cupiditate aliquam reprehenderit, 
+                             atque id at nulla inventore!
+                        </p>
+                        <a href="#" target="_blank" class="btn btn-lg mt-3 btnApoktise"><span class="pApoktisebtn1">AΠΟΚΤΗΣΕ ΤΟ</span></a>
+                    </div>
+               
+            </div>
+           
+        </div>
+    </section>
+    
+    <!--END PHOTO HOUSE&BOX-->
+
+    <!--START FAQS ETC-->
+    <section class="container-fluid pt-5" style="background-color: #D3D5FD;">
+        <div class="row px-xl-5 py-xl-5">
+            <div class="col-12">
+                <div class="container-fluid">
+                    <div class="row ml-md-5 pl-xl-5 ml-3 pl-3">
+                        <!-- XRISIMA ENTIPA -->
+                <div class="col-xl-4">
+                    <p class="title-faqs">Χρήσιμα Έντυπα</p>
+                    <div class="p-faqs2">
+                        <div class="mb-2"> <span class="circle"><i class="fas fa-check ml-1 mb-1" style="color: #fff;"></i></span><span class="p-lorem2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                        <div class="mb-2"> <span class="circle"><i class="fas fa-check ml-1 mb-1" style="color: #fff;"></i></span><span class="p-lorem2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                        <div class="mb-2"> <span class="circle"><i class="fas fa-check ml-1 mb-1" style="color: #fff;"></i></span><span class="p-lorem2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                        <div class="mb-2"> <span class="circle"><i class="fas fa-check ml-1 mb-1" style="color: #fff;"></i></span><span class="p-lorem2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                    </div>
+                    <a href="#" target="_blank" class="btn btn-primary  bntMoreAbout2"><span class="p-btn2">ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</span></a>
+                </div>
+                <!-- END XRISIMA ENTIPA-->
+            
+                 <!-- FAQS -->
+                 <div class="col-xl-4">
+                            <p class="title-faqs">FAQs</p>
+                            <div class="mb-2"> <span class="circle"><img src="./img/qmark.png" alt="" class="img-pdf ml-2 mb-1" ></span><span class="p-faqs2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                            <div class="mb-2"> <span class="circle"><img src="./img/qmark.png" alt="" class="img-pdf ml-2 mb-1" ></span><span class="p-faqs2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                            <div class="mb-2"> <span class="circle"><img src="./img/qmark.png" alt="" class="img-pdf ml-2 mb-1" ></span><span class="p-faqs2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                            <div class="mb-2"> <span class="circle"><img src="./img/qmark.png" alt="" class="img-pdf ml-2 mb-1" ></span><span class="p-faqs2 ml-2">Lorem ipsum dolor sit</span><br></div>
+                        <a href="#" target="_blank" class="btn btn-primary  bntMoreAbout2"><span class="p-btn2">ΜΑΘΕ ΠΕΡΙΣΣΟΤΕΡΑ</span></a>
+                </div>
+                <!-- END FAQS-->
+            
+                 <!-- CLICK TO CALL -->
+                 <div class="col-xl-4">
+                            <p class="title-faqs">Click to call</p>
+                        <div class="p-faqs2">
+                            <span class="p-faq3">
+                                Lorem ipsum dolor sit <br>
+                                amet consectetur adipisicing elit.  <br>
+                                Deleniti necessitatibus temporibus  <br>
+                                architecto eius expedita officiis <br>
+                                veniam ex, asperiores possimus velit? 
+                            </span>
+                        </div>
+                        <a href="#" target="_blank" class="btn btn-primary  bntMoreAbout3"><span class="p-btn2">KΑΛΕΣΤΕ ΤΩΡΑ</span></a>
+                </div>
+                <!-- END CLICK TO CALL-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END FAQS ETC-->   
+    </div>
+</section>
+
+<!--START ROW 11111 ETC-->
+<section class="container-fluid">
+    <div class="row light-blue-box2 px-xl-5">
+        <div class="col">
+            <div class="container-fluid py-5 px-5">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="container-fluid">
+                            <div class="row">
+                            <div class="col-auto phone">
+                                <p class="pClient">ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ</p>
+                                    <div class="row">
+                                        <div class="col-xl-auto col-6 ">
+                                            <i class="fas fa-8x fa-mobile-alt" style="color: #ffff;"></i>
+                                        </div>
+                                        <div class="col-xl-auto col-6">
+                                            <span class="numCall">11111 <br>
+                                            <p class="numCall2">ή στο <br>210 0000000</p> 
+                                            </span>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 icons">
+                        <div class="row ml-md-2">
+                            <span class="circle-blue">
+                                <img src="./img/tri.png" class="img-icon" alt="">
+                            </span>
+                            <span class="p-elecProb ml-md-2 mt-md-2">Για βλάβη ηλεκτρικού ρεύματος <br> 
+                                <span class="p-call">
+                                <i class="fas fa-long-arrow-alt-right arrow-alt-right"></i> ΔΕΔΔΗΕ <br>
+                                <i class="fas fa-phone"></i> 11500
+                                </span>
+                            </span>
+                        </div>
+                        <div class="row ml-md-2">
+                            <span class="circle-blue">
+                                <img src="./img/fire.png" class="img-icon" alt="">
+                            </span>
+                            <span class="p-elecProb ml-2 mt-2">Για διαρροή φυσικού αερίου <br>
+                                <span class="p-call">
+                                    <i class="fas fa-long-arrow-alt-right arrow-alt-right"></i> EΔΑ Αττικής <br>
+                                    <i class="fas fa-phone"></i> 213 0882000
+                                </span> <br>
+                            <span class="p-call">
+                                <i class="fas fa-long-arrow-alt-right arrow-alt-right"></i> EΔΑ Θεσ/νικης - Θεσσαλίας <br>
+                                <i class="fas fa-phone"></i> 231 0584444
+                            </span> <br>
+                                <span class="p-call">
+                                <i class="fas fa-long-arrow-alt-right arrow-alt-right"></i> ΔEΔΑ Υπόλοιπης Ελλάδας <br>
+                                <i class="fas fa-phone"></i> 210 5549321
+                                </span>
+                            </span>            
+                        </div>
+                    </div> 
+                    <div class="col-12 col-lg-4 icons">
+                        <div class="row ml-md-2">
+                            <span class="circle-blue">
+                                <img src="./img/react.png" class="img-icon" alt="">
+                            </span>
+                            <span class="p-elecProb1 ml-2">ΡΑΕ <br>
+                                <span class="p-callContainer">
+                                    <i class="fas fa-phone"></i>
+                                    <span class="p-call1">
+                                    210 3727400 <br>
+                                    </span>        
+                                </span>
+                            </span>
+                        </div>
+                        <div class="row ml-md-2">
+                            <span class="circle-blue">
+                                <img src="./img/sinogoros.png" class="img-icon mt-2" alt="">
+                            </span>
+                            <span class="p-elecProb1 ml-2">Συνήγορος Καταναλωτή <br>
+                                <span  class="p-callContainer">
+                                    <i class="fas fa-phone"></i>
+                                <span class="p-call1">
+                                    210 6460612 <br>
+                                </span>      
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </div>
+</section>
+<!--END ROW 18350 ETC-->
+
+<!--START PRATIRIA ETC-->
+
+<div  class="container-fluid">
+    <div class="row last-row px-xl-5">
+        <div class="col-12">
+            <div class="row mt-5 pt-5 px-5 ml-xl-4">
+                <div class="col-xl-4 mb-5">
+                    <i class="fas fa-2x fa-tint" style="color:#1F4287;"></i> 
+                         <span class="p-pratiria">
+                         Τα πρατηρία μας
+                        </span>
+                        <div class="ml-5">
+                            <p class="pLastLorem">
+                                <span>
+                                Lorem ipsum dolor sit amet  consectetur adipisicing elit.  
+                                Neque nam eum, nulla sunt architecto.
+                                </span>
+                               </p>
+                               <button class="btn btn-outline-secondary btn-show-the-map mt-2">ΔΕΙΤΕ ΤΟΝ ΧΑΡΤΗ</button> <br><br>                               
+                        </div>
+                </div>
+                             
+                <div class="col-xl-4 mb-5">
+                    <i class="far fa-2x fa-envelope" style="color:#1F4287;"></i>
+                        <span class="p-pratiria">Email Alert</span>
+                        <p class="pLastLorem ml-5">Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit.</p>
+                    <form class="formEmail">
+                        <div class="ml-md-5">
+                            <input type="email" id="exampleInputEmail1"  placeholder="Your email">
+                        </div>
+                        <span class="form-check check-input check_box pl-sm-5 p-0 m-0">
+                            <input type="checkbox" class="form-check-input regular-checkbox" id="exampleCheck1">
+                            <label class="form-check-label check-input-p" for="exampleCheck1">Lorem ipsum dolores amit.</label>
+                        </span>
+                    </form>
+                    <div class="contact-row mt-5">
+                        <i class="fas fa-2x fa-phone" style="color: #1F4287;"></i>
+                         <span class="p-pratiria">Contact us</span>
+                        <p class="ml-5 pLastLorem">Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 mb-5">
+                    <p class="connect ml-3">Connect with us on:</p>                                                      
+                        <div class="container-fluid">
+                            <div class="row no-gutters">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="col-3 small-box">
+                                            <a href="">
+                                                <i class="fab fa-2x fa-facebook-f fontAw mt-3 ml-1"></i>
+                                            </a>
+                                         </div>
+                                    </div>
+                                 </div>
+                                      <div class="card">
+                                        <div class="card-body">
+                                            <div class="col-3 small-box">
+                                                <a href="">
+                                                    <i class="fab fa-2x fa-linkedin-in fontAw mt-3"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                      </div>                                  
+                                </div>
+                        <div class="row no-gutters">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="col-3 small-box">
+                                        <a href="">
+                                            <i class="fab fa-2x fa-youtube fontAw mt-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body">
+                                    <div class="col-3 small-box">
+                                        <a href="">
+                                            <i class="fab fa-2x fa-instagram fontAw mt-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                        
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="row no-gutters">
+                            <div class="col-1"> 
+                                <img src="./img/redHr.png"  alt="">
+                            </div>
+                            <div class="col-11">
+                                <hr class="hrRedLast">
+                            </div>
+                        </div>
+                     </div>
+                     <div class="row ml-xl-3">
+                        <p class="col-auto mkOil">mk's oil</p>
+                    </div>
+                    <div class="row ml-xl-3">
+                        <div class="col-12">  
+                            <p class="copy">Copyright &copy; <script>document.write(new Date().getFullYear())</script> 
+                            <a href="" class="copy">Όροι Χρήσης</a>| 
+                            <a href="" class="copy">Πολιτική Προστασίας Προσωπικών Δεδομένων </a>|
+                            <a href="" class="copy">Πολιτική Cookies</a>
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!--END  PRATIRIA ETC-->
+
+<script src="./javascript/jquery-3.4.1.min.js"></script>
+<script src="./javascript/app.js"></script>
+
+</body>
+</html>
